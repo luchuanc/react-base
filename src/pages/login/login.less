@@ -1,0 +1,157 @@
+@import "../../style/mixin.less";
+.page_login{
+    background-color: #fff;
+    .header{
+        width: 100%;
+        img{
+            width: 100%;
+            display: block;
+            border:0;
+        }
+    }
+    .footBox{
+        width: 100%;
+        padding:0 12px;
+        margin-top: 15px;
+        overflow: hidden;
+        .userform{
+            .item{
+                margin-top:10px; 
+                border:1px solid #bfbfbf;
+                height:44px;
+                .brd(5px);
+                .c-left{
+                    float: left;
+                    width: 48px;
+                    height:100%;
+                    margin-left: -100%;
+                    &.icon1{
+                        background: url(../../images/login_icon1.png) no-repeat center center;
+                        background-size: 13px 19px;
+                    }
+                    &.icon2{
+                        background: url(../../images/login_icon2.png) no-repeat center center;
+                        background-size: 14px 17px;
+                    }
+                }
+                .c-center{
+                    float: left;
+                    width: 100%;
+                    height:100%;
+                    .c-center-body{
+                        margin: 0 94px 0 48px;
+                        height:100%;
+                        input{
+                            border:0;
+                            display: block;
+                            width: 100%;
+                            height:100%;
+                            padding: 5px;
+                            margin-left: -5px;
+                            font-size: 14px;
+                            color:#404040;
+                        }
+                    }
+                }
+                .c-right{
+                    float: right;
+                    width: 94px;
+                    height:100%;
+                    margin-left: -94px;
+                    text-align: center;
+                    line-height: 42px;
+                    
+                    span{
+                        display: block;
+                        width: 100%;
+                        height:100%;
+                        font-size: 14px;
+                        color:#bfbfbf;
+                        font-weight:400;
+                        position: relative; 
+                        .ws();
+                        &.red{
+                            color:#d62f35;
+                        }
+                        &::after{
+                            content: "";
+                            height:14px;
+                            position: absolute;
+                            width: 1px;
+                            left:0;
+                            top:14px;
+                            background-color:#e6e6e6
+                        }
+                    }
+                }
+            }
+        }
+        .userAgree{
+            // margin-top: 15px;
+            .userRuleInput{
+                padding-left:0;
+                line-height: 16px;
+                padding:0;
+                margin: 15px 0;
+                input{
+                    width: 16px;
+                    height:16px;
+                    vertical-align: sub;
+                    &::before{
+                        font-size: 16px;
+                    }
+                }
+                .weui-agree__text{
+                    vertical-align: middle;
+                }
+            }
+            span{
+                font-size: 12px;
+                color:#404040;
+                &.red{
+                    color:#d62f35;
+                }
+                &.agree{
+                    margin: 0 4px;
+                }
+                &.circle{
+                    width:4px;
+                    height:4px;
+                    .brd(50%);
+                    background-color: #bfbfbf;
+                    vertical-align: inherit;
+                    display: inline-block;
+                    margin: 0 3px;
+                }
+            }
+        }
+        .userBtn{
+            height:44px;
+            width: 100%;
+            line-height: 44px;
+            margin-top: 25px;
+            .btnBox{
+                width: 100%;
+                height:100%;
+            }
+            .userBtn_give{
+                width:100%;
+                height:100%;
+                background-color:#bfbfbf;
+                color:#fff;
+                font-size: 15px;
+                text-align: center;
+                .brd(4px);
+                &.light{
+                    background-color:#d62f35;
+                }
+            }
+        }
+        .userRule{
+            margin-top:13px; 
+            font-size: 12px;
+            color:#808080;
+            text-align: center;
+        }
+    }
+}

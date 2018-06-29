@@ -1,0 +1,149 @@
+@import "../../style/mixin.less";
+.page_requestList{
+    background-color: #ebebeb;
+    .shareMask{
+        background: url(../../images/share_mask.png) no-repeat center center;
+        background-size:100% 100%;
+        opacity: 1; 
+    }
+    .header{
+        height:186px;
+        width: 100%;
+        background-color: #fff;
+        padding:10px 12px;
+        .p1{
+            font-size: 17px;
+            color:#d93035;
+            text-align: center;
+            margin-top: 16px;
+        }
+        .p2{
+            font-size: 13px;
+            color:#404040;
+            text-align: center;
+            margin-top: 2px;
+        }
+        .userBtn{
+            height:44px;
+            width: 100%;
+            line-height: 44px;
+            margin-top: 22px;
+            .btnBox{
+                width: 100%;
+                height:100%;
+            }
+            .userBtn_give{
+                width:100%;
+                height:100%;
+                background-color:#bfbfbf;
+                color:#fff;
+                font-size: 15px;
+                text-align: center;
+                .brd(4px);
+                &.light{
+                    background-color:#d62f35;
+                }
+            }
+        }
+        .userRule{
+            margin-top:10px; 
+            font-size: 12px;
+            color:#808080;
+            text-align: center;
+        }
+    }
+    .content{
+        background-color: #fff;
+        margin-top: 12px;
+        padding-top:24px;
+        .c-title{
+            height:56px;
+            width: 100%;
+            
+            .p1{
+                width: 100%;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    &.c-line{
+                        width: 10px;
+                        height:1px;
+                        background-color: #b2b2b2;
+                        margin: 0 8px;
+                    }
+                    &.c-text{
+                        font-size: 17px;
+                        color:#404040;
+                    }
+                }
+            }
+            .p2{
+                color:#808080;
+                font-size: 13px;
+                text-align: center;
+                margin-top:5px;
+                .c-red{
+                    color:#d62f35;
+                    font-weight: 600;
+                }
+            }
+        }
+        .c-item{
+            height:44px;
+            width: 100%;
+            padding:0 12px;
+            margin-top: 24px;
+            .c-left{
+                float: left;
+                height:44px;
+                width: 44px;
+                margin-left: -100%;
+                .brd(50%);
+                &.empty{
+                    background: url(../../images/banner2.png) no-repeat center center;
+                    background-size: 100% 100%;
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                    height:100%;
+                    border:0;
+                    .brd(50%);
+                }
+            }
+            .c-right{
+                float: right;
+                height:100%;
+                width: 150px;
+                margin-left: -150px;
+                text-align: right;
+                line-height: 44px;
+                font-size: 12px;
+                color:#808080;
+                &.red{
+                    color:#d62f35;
+                }
+            }
+            .c-center{
+                float: left;
+                height:100%;
+                width: 100%;
+                line-height: 22px;
+                .c-center-body{
+                    margin: 0 150px 0 44px;
+                    padding:0 12px;
+                    .ws();
+                    .p1{
+                        font-size: 16px;
+                        color:#404040;
+                    }
+                    .p2{
+                        font-size: 12px;
+                        color:#bfbfbf;
+                    }
+                }
+            }
+        }
+    }
+}
