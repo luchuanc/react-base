@@ -18,11 +18,11 @@ import store from "./store/Store.js"
 import App from "./pages/App/App.js"
 
 import "./utils/apiConfig.js"
+
+console.log($);
 window.addEventListener('load', () => {
     FastClick.attach(document.body);
 });
-
-
 ReactDOM.render(
   <Provider store={store}>
     <App>

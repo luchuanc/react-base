@@ -104,6 +104,10 @@ module.exports = {
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
     ],
   },
+  externals:{
+    "$":"jQuery",
+    "jQuery":"jQuery"
+  },
   module: {
     strictExportPresence: true,
     rules: [
